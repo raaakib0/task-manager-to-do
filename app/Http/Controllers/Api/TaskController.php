@@ -44,7 +44,9 @@ class TaskController extends Controller
         $data = $request->validate([
             'title' => 'sometime|required|string|max:255',
             'description'=> 'nullable|string',
+            'completed'=> 'sometime|boolean',
         ]);
+        
     }
 
     /**

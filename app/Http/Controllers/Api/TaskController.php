@@ -46,14 +46,16 @@ class TaskController extends Controller
             'description'=> 'nullable|string',
             'completed'=> 'sometime|boolean',
         ]);
-        
+        $task->update($data);
+        return $task;
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Task $task)
     {
-        //
+        $task->delete();
+        return response()->noContent();
     }
 }

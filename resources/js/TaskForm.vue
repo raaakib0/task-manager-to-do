@@ -8,6 +8,7 @@
     export default defineComponent({
 emits: ['created'],
 setup(_,{emit}){
+const title=ref('');
 
 };
     });

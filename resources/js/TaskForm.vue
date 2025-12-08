@@ -5,6 +5,8 @@
     </form>
 </template>
 <script lang="ts">
+    import{defineComponent, ref} from 'vue';
+    import axios from 'axiox';
     export default defineComponent({
 emits: ['created'],
 setup(_,{emit}){
@@ -14,7 +16,8 @@ const submit = async()=>{
     await axios.post('/api/tasks', {title: title.value});
     title.value ='';
     emit('crated');
-}
+};
+return {title,submit};
 };
     });
 </script>

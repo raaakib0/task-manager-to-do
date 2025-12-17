@@ -9,12 +9,19 @@
 </template>
 
 <script lang="ts">
+    import {defineComponent} from 'vue';
+    import axios from  'axios';
 import { Task } from "./types";
 
 
 export default defineComponent({
 props:{tasks: Array as ()=> Task[] },
 emit: ['updated'],
+
+setup(props,{emit}){
+
+};
+
 });
 
 </script>

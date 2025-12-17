@@ -19,7 +19,9 @@ props:{tasks: Array as ()=> Task[] },
 emit: ['updated'],
 
 setup(props,{emit}){
+const toggle =  async (task: Task)=>{
 
+};
 };
 
 });

@@ -28,8 +28,8 @@ const remove= async (id: number)=> {
 await axios.delete(`/api/tasks/${id}`);
 emit('updated');
 };
-
-};
+return {toggle, remove};
+}
 
 });
 

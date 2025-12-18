@@ -18,6 +18,6 @@
     emit('created');
 };
 return {title,submit};
-};
+}
     });
 </script>

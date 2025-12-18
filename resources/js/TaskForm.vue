@@ -15,7 +15,7 @@
     if(!title.value) return;
     await axios.post('/api/tasks', {title: title.value});
     title.value ='';
-    emit('crated');
+    emit('created');
 };
 return {title,submit};
 };

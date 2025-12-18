@@ -6,7 +6,7 @@
 </template>
 <script lang="ts">
     import{defineComponent, ref} from 'vue';
-    import axios from 'axiox';
+    import axios from 'axios';
     export default defineComponent({
     emits: ['created'],
     setup(_,{emit}){

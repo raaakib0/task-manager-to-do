@@ -6,7 +6,7 @@
     </div>
 </template>
 
-<scritp lang="ts">
+<script lang="ts">
 import {defineComponent,ref, onMounted  } from "vue";
 import axios from 'axios';
 import TaskForm from './components/TaskForm.vue';
@@ -19,13 +19,13 @@ export default defineComponent({
 setup(){
 const tasks = ref<Task[]>([]);
 const fetchTasks = async ()=>{
-    const res = await axios.get('api/tasks');
+    const res = await axios.get('/api/tasks');
     tasks.value = res.data;
 };
 onMounted(fetchTasks);
 return{tasks,fetchTasks};
-};
+}
 
 })
 
-</scritp>
+</script>

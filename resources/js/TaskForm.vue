@@ -20,7 +20,10 @@ export default defineComponent({
     //     return { title, submit };
     // },
     setup(_,{emit}){
-        
+        const title = ref('');
+        const submit = async() =>{
+
+        };
     },ss
 });
 </script>
